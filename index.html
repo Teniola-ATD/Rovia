@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovia - Your Complete Career Journey. Simplified.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Vector Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Local Logo Image Link -->
+            <a href="#hero" class="flex items-center">
+                <img src="Images/logo.png" alt="ROVIA Logo" class="h-10 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <nav class="hidden md:flex items-center gap-2 bg-gray-50/80 p-1.5 rounded-full border border-gray-100">
+                <a href="#hero" class="px-5 py-2 text-sm font-medium text-blue-600 bg-white rounded-full shadow-sm border border-gray-200/60">Home</a>
+                <a href="#pillars" class="px-5 py-2 text-sm font-medium text-gray-600 rounded-full hover:text-blue-600">Discover</a>
+                <a href="#flow" class="px-5 py-2 text-sm font-medium text-gray-600 rounded-full hover:text-blue-600">Learn</a>
+                <a href="#why-rovia" class="px-5 py-2 text-sm font-medium text-gray-600 rounded-full hover:text-blue-600">Community</a>
+                <a href="#footer" class="px-5 py-2 text-sm font-medium text-gray-600 rounded-full hover:text-blue-600">Resources</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden md:flex items-center gap-3">
+                <button aria-label="Search" class="p-2 text-gray-500 hover:text-blue-600 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="#dashboard-section" class="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700">Sign In</a>
+                <a href="#dashboard-section" class="px-5 py-2.5 text-sm font-semibold text-blue-600 border border-blue-200 bg-blue-50 rounded-full">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative overflow-hidden pt-8 pb-16 lg:pt-12 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 bg-gray-100 px-3.5 py-1.5 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                        Your Career, One Journey.
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-blue-600 leading-[1.15] tracking-tight">
+                        Your complete career journey. Simplified.
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl">
+                        Discover,prepare and apply for the right opportunities,all in one platform. Move forward with confidence.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#dashboard-section" class="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700">
+                            Get Started - It's Free <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        
+                        <a href="#pillars" class="px-7 py-3.5 text-base font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-200 hover:bg-blue-100">
+                            Explore Opportunities
+                        </a>
+                    </div>
+                    
+                    <p class="text-xs text-gray-400 font-medium pt-3">
+                        For Student, graduate and early-careers Professionals.<br>
+                        Nigeria-first. Global-by-design.
+                    </p>
+                </div>
+
+                <!-- Right Hero Image (Using Local Images/Hero_image.png) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 aspect-[4/3] sm:aspect-[14/11]">
+                        <img 
+                            src="Images/Hero_image.png" 
+                            alt="Student carrying books" 
+                            class="w-full h-full object-cover object-center"
+                        >
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 1: 5 CORE PILLARS GRID -->
+    <section id="pillars" class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                
+                <!-- Pillar 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-emerald-100/80 flex items-center justify-center text-emerald-600 mb-4 text-2xl">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Discover</h3>
+                    <p class="text-xs text-gray-500">Find Opportunities that fits you</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-blue-100/80 flex items-center justify-center text-blue-600 mb-4 text-2xl">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Understand</h3>
+                    <p class="text-xs text-gray-500">Know your eligibility, requirements and next steps.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100/80 flex items-center justify-center text-purple-600 mb-4 text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Prepare</h3>
+                    <p class="text-xs text-gray-500">Build the skills and confidence you need</p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-amber-100/80 flex items-center justify-center text-amber-600 mb-4 text-2xl">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Apply</h3>
+                    <p class="text-xs text-gray-500">Submit and manage your applications.</p>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="flex flex-col items-center col-span-2 md:col-span-1">
+                    <div class="w-16 h-16 rounded-full bg-rose-100/80 flex items-center justify-center text-rose-600 mb-4 text-2xl">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Track and Learn</h3>
+                    <p class="text-xs text-gray-500">Get Insights, Learn from outcomes, and grow.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 2: THE COMPLETE CAREER JOURNEY (10-STEP PROCESS FLOW) -->
+    <section id="flow" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-4 space-y-4">
+                    <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">THE COMPLETE CAREER JOURNEY</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 leading-tight">
+                        More than just opportunities.
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Rovia connects any step of your career journey into one single powerful platform so you can move forward with clarity and confidence.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#dashboard-section" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700">
+                            Start Your Journey <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right 10-Step Flowchart Container -->
+                <div class="lg:col-span-8 bg-gray-50/50 p-6 sm:p-10 rounded-3xl border border-gray-100">
+                    
+                    <!-- Row 1 (Steps 1 to 5) -->
+                    <div class="flex flex-wrap md:flex-nowrap items-center justify-between gap-2 mb-8">
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Find/ bring opportunity</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-lg"><i class="fa-regular fa-file-lines"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Understand</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Check Readiness</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-lg"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Prepare</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-lg"><i class="fa-solid fa-paper-plane"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Apply</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 (Steps 6 to 10) -->
+                    <div class="flex flex-wrap md:flex-nowrap items-center justify-between gap-2">
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-lg"><i class="fa-solid fa-chart-simple"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Track</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-lg"><i class="fa-regular fa-clock"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Review</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center text-lg"><i class="fa-regular fa-lightbulb"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Learn</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center text-lg"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Improve</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-gray-300 hidden md:block"></i>
+
+                        <div class="flex flex-col items-center text-center flex-1">
+                            <div class="w-12 h-12 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center text-lg"><i class="fa-regular fa-star"></i></div>
+                            <span class="text-[11px] font-medium text-gray-700 mt-2">Next Opportunity</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: WHY ROVIA & 6 FEATURE CARDS GRID + DASHBOARD -->
+    <section id="why-rovia" class="py-20 bg-blue-50/30 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12">
+                <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Why Rovia</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-1">
+                    Built for your next<br>big opportunity.
+                </h2>
+                <p class="text-sm text-gray-600 mt-2 max-w-xl">
+                    We're not just another job board. Rovia is your career companion - helping you find what fits, prepare for what's next, and grow with every step.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- 6 Feature Cards Grid -->
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-3">
+                    
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-regular fa-id-card"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">Personalized Recommendations</h4>
+                        <p class="text-[9px] text-gray-500">Based on your profile, skill and goal.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-globe"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">Global Opportunities</h4>
+                        <p class="text-[9px] text-gray-500">Local access. Global reach.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">Trusted Information</h4>
+                        <p class="text-[9px] text-gray-500">Verified and reliable sources.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">AI-Powered Guidance</h4>
+                        <p class="text-[9px] text-gray-500">Smarter suggestions, better decisions.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-users"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">Supportive Community</h4>
+                        <p class="text-[9px] text-gray-500">Learn, Share, Grow together</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
+                        <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-lock"></i></div>
+                        <h4 class="text-[11px] font-bold text-gray-900">Secure & Private</h4>
+                        <p class="text-[9px] text-gray-500">Your data, your control.</p>
+                    </div>
+
+                </div>
+
+                <!-- Dashboard Container -->
+                <div id="dashboard-section" class="lg:col-span-7 bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden">
+                    
+                    <div class="bg-gray-50 border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <!-- Dashboard Mini Logo -->
+                            <img src="Images/logo.png" alt="ROVIA Logo" class="h-5 w-auto object-contain">
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <!-- Profile Avatar (Using Local Images/Hero_image.png) -->
+                            <img src="Images/Hero_image.png" class="w-7 h-7 rounded-full object-cover object-top border border-gray-300" alt="Profile User Avatar">
+                            <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 min-h-[360px]">
+                        
+                        <!-- Sidebar -->
+                        <div class="col-span-4 bg-gray-50/60 border-r border-gray-100 p-4 space-y-2">
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-bold text-gray-700 bg-white rounded-lg shadow-sm"><i class="fa-solid fa-house text-blue-600"></i> Home</a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-solid fa-magnifying-glass text-gray-400"></i> Discover</a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-regular fa-clipboard text-gray-400"></i> My Application</a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-regular fa-lightbulb text-gray-400"></i> Learn</a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-solid fa-users text-gray-400"></i> Community</a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-regular fa-user text-gray-400"></i> Profile</a>
+                        </div>
+
+                        <!-- Main Dashboard Area -->
+                        <div class="col-span-8 p-5 space-y-4 bg-white">
+                            <div>
+                                <h3 class="text-base font-bold text-gray-900">Good Morning, Favour 👋</h3>
+                                <p class="text-[11px] text-gray-500">Here's what's next for you</p>
+                            </div>
+
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200/80 space-y-2">
+                                <span class="text-[10px] font-bold text-gray-400 uppercase">Your Next Action</span>
+                                <h5 class="text-xs font-bold text-gray-800">Complete your Profile</h5>
+                                <p class="text-[11px] text-gray-500">A complete profile increases your chances of getting matched with the right opportunities.</p>
+                                <button class="mt-1 px-4 py-1.5 text-xs font-semibold text-white bg-black rounded-lg">Complete Profile</button>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <h4 class="text-xs font-bold text-gray-900">Recommended for you</h4>
+                                    <a href="#" class="text-[11px] text-gray-400">View All</a>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="p-3 bg-white border border-gray-200 rounded-xl space-y-1">
+                                        <div class="w-6 h-6 rounded bg-blue-50 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <h5 class="text-[11px] font-bold text-gray-900">Graduate Trainee Program</h5>
+                                        <p class="text-[9px] text-gray-500">Femco • Lagos, Nigeria</p>
+                                        <span class="inline-block text-[8px] font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">Great Match</span>
+                                    </div>
+
+                                    <div class="p-3 bg-white border border-gray-200 rounded-xl space-y-1">
+                                        <div class="w-6 h-6 rounded bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs"><i class="fa-solid fa-code"></i></div>
+                                        <h5 class="text-[11px] font-bold text-gray-900">Software Engineering Intern</h5>
+                                        <p class="text-[9px] text-gray-500">Minimal L. • Remote</p>
+                                        <span class="inline-block text-[8px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Good Match</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER DARK CTA BANNER -->
+    <section class="bg-black text-white py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center md:text-left">
+                    <span class="text-xs text-gray-400 font-medium">Your Future is a Journey</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Ready to take the next steps?</h2>
+                    <p class="text-xs text-gray-400 max-w-lg">
+                        Join thousands of students, graduates and early-career professionals using Rovia to build brighter futures.
+                    </p>
+                </div>
+
+                <div>
+                    <a href="#dashboard-section" class="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold text-gray-900 bg-white rounded-full">
+                        Get Started - It's Free <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER BOTTOM -->
+    <footer id="footer" class="bg-white border-t border-gray-100 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Footer Local Logo Link -->
+            <img src="Images/logo.png" alt="ROVIA Logo" class="h-8 w-auto object-contain">
+            
+            <div class="flex items-center gap-6 text-xs text-gray-500">
+                <a href="#">About</a>
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="flex items-center gap-4 text-gray-400 text-xs">
+                <div class="flex items-center gap-3">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <span>|</span>
+                <span class="text-[11px] text-gray-400">Nigeria-first. Global-by-design.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
