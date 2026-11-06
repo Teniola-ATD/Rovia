@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rovia - Your Complete Career Journey. Simplified.</title>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="Images/logo.png">
     
     <!-- Tailwind CSS CDN -->
@@ -34,15 +35,15 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-gray-800 antialiased">
+<body class="bg-white text-gray-800 antialiased overflow-x-hidden">
 
     <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
             <!-- Local Logo Image Link -->
             <a href="#hero" class="flex items-center">
-                <img src="Images/logo.png" alt="ROVIA Logo" class="h-10 w-auto object-contain">
+                <img src="Images/logo.png" alt="ROVIA Logo" class="h-8 sm:h-10 w-auto object-contain">
             </a>
 
             <!-- Desktop Nav Items -->
@@ -54,11 +55,29 @@
                 <a href="#footer" class="px-5 py-2 text-sm font-medium text-gray-600 rounded-full hover:text-blue-600">Resources</a>
             </nav>
 
-            <!-- Actions -->
+            <!-- Desktop Actions -->
             <div class="hidden md:flex items-center gap-3">
                 <button aria-label="Search" class="p-2 text-gray-500 hover:text-blue-600 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <a href="#dashboard-section" class="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700">Sign In</a>
                 <a href="#dashboard-section" class="px-5 py-2.5 text-sm font-semibold text-blue-600 border border-blue-200 bg-blue-50 rounded-full">Get Started</a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-btn" class="md:hidden p-2.5 text-gray-700 hover:text-blue-600 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 shadow-xl px-6 py-6 space-y-4">
+            <a href="#hero" class="mobile-link block text-base font-medium text-blue-600 bg-blue-50 px-4 py-2.5 rounded-lg">Home</a>
+            <a href="#pillars" class="mobile-link block text-base font-medium text-gray-700 hover:bg-gray-50 px-4 py-2.5 rounded-lg">Discover</a>
+            <a href="#flow" class="mobile-link block text-base font-medium text-gray-700 hover:bg-gray-50 px-4 py-2.5 rounded-lg">Learn</a>
+            <a href="#why-rovia" class="mobile-link block text-base font-medium text-gray-700 hover:bg-gray-50 px-4 py-2.5 rounded-lg">Community</a>
+            <a href="#footer" class="mobile-link block text-base font-medium text-gray-700 hover:bg-gray-50 px-4 py-2.5 rounded-lg">Resources</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col gap-3">
+                <a href="#dashboard-section" class="mobile-link w-full text-center py-3 text-sm font-semibold text-white bg-blue-600 rounded-full shadow-md">Sign In</a>
+                <a href="#dashboard-section" class="mobile-link w-full text-center py-3 text-sm font-semibold text-blue-600 bg-blue-50 border border-blue-200 rounded-full">Get Started</a>
             </div>
         </div>
     </header>
@@ -70,27 +89,27 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Left Content -->
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 bg-gray-100 px-3.5 py-1.5 rounded-full">
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-gray-500 bg-gray-100 px-3.5 py-1.5 rounded-full mx-auto lg:mx-0">
                         <span class="w-2 h-2 rounded-full bg-blue-600"></span>
                         Your Career, One Journey.
                     </div>
                     
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-blue-600 leading-[1.15] tracking-tight">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-blue-600 leading-[1.15] tracking-tight">
                         Your complete career journey. Simplified.
                     </h1>
                     
-                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl">
+                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
                         Discover,prepare and apply for the right opportunities,all in one platform. Move forward with confidence.
                     </p>
                     
                     <!-- CTA Buttons -->
-                    <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a href="#dashboard-section" class="inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700">
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#dashboard-section" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700">
                             Get Started - It's Free <i class="fa-solid fa-arrow-right"></i>
                         </a>
                         
-                        <a href="#pillars" class="px-7 py-3.5 text-base font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-200 hover:bg-blue-100">
+                        <a href="#pillars" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-200 hover:bg-blue-100">
                             Explore Opportunities
                         </a>
                     </div>
@@ -101,9 +120,9 @@
                     </p>
                 </div>
 
-                <!-- Right Hero Image (Using Local Images/Hero_image.png) -->
+                <!-- Right Hero Image -->
                 <div class="lg:col-span-6 relative">
-                    <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 aspect-[4/3] sm:aspect-[14/11]">
+                    <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 aspect-[4/3] sm:aspect-[14/11] max-w-lg lg:max-w-none">
                         <img 
                             src="Images/Hero_image.png" 
                             alt="Student carrying books" 
@@ -120,51 +139,51 @@
     <!-- SECTION 1: 5 CORE PILLARS GRID -->
     <section id="pillars" class="py-16 bg-white border-y border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
                 
                 <!-- Pillar 1 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 rounded-full bg-emerald-100/80 flex items-center justify-center text-emerald-600 mb-4 text-2xl">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-100/80 flex items-center justify-center text-emerald-600 mb-3 text-xl sm:text-2xl">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Discover</h3>
-                    <p class="text-xs text-gray-500">Find Opportunities that fits you</p>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1">Discover</h3>
+                    <p class="text-[11px] sm:text-xs text-gray-500">Find Opportunities that fits you</p>
                 </div>
 
                 <!-- Pillar 2 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 rounded-full bg-blue-100/80 flex items-center justify-center text-blue-600 mb-4 text-2xl">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-blue-100/80 flex items-center justify-center text-blue-600 mb-3 text-xl sm:text-2xl">
                         <i class="fa-regular fa-file-lines"></i>
                     </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Understand</h3>
-                    <p class="text-xs text-gray-500">Know your eligibility, requirements and next steps.</p>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1">Understand</h3>
+                    <p class="text-[11px] sm:text-xs text-gray-500">Know your eligibility, requirements & steps.</p>
                 </div>
 
                 <!-- Pillar 3 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 rounded-full bg-purple-100/80 flex items-center justify-center text-purple-600 mb-4 text-2xl">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-purple-100/80 flex items-center justify-center text-purple-600 mb-3 text-xl sm:text-2xl">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Prepare</h3>
-                    <p class="text-xs text-gray-500">Build the skills and confidence you need</p>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1">Prepare</h3>
+                    <p class="text-[11px] sm:text-xs text-gray-500">Build skills and confidence</p>
                 </div>
 
                 <!-- Pillar 4 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 rounded-full bg-amber-100/80 flex items-center justify-center text-amber-600 mb-4 text-2xl">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-amber-100/80 flex items-center justify-center text-amber-600 mb-3 text-xl sm:text-2xl">
                         <i class="fa-solid fa-paper-plane"></i>
                     </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Apply</h3>
-                    <p class="text-xs text-gray-500">Submit and manage your applications.</p>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1">Apply</h3>
+                    <p class="text-[11px] sm:text-xs text-gray-500">Submit and manage applications.</p>
                 </div>
 
                 <!-- Pillar 5 -->
-                <div class="flex flex-col items-center col-span-2 md:col-span-1">
-                    <div class="w-16 h-16 rounded-full bg-rose-100/80 flex items-center justify-center text-rose-600 mb-4 text-2xl">
+                <div class="flex flex-col items-center col-span-2 sm:col-span-3 lg:col-span-1">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-rose-100/80 flex items-center justify-center text-rose-600 mb-3 text-xl sm:text-2xl">
                         <i class="fa-solid fa-chart-simple"></i>
                     </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Track and Learn</h3>
-                    <p class="text-xs text-gray-500">Get Insights, Learn from outcomes, and grow.</p>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1">Track and Learn</h3>
+                    <p class="text-[11px] sm:text-xs text-gray-500">Get Insights and grow.</p>
                 </div>
 
             </div>
@@ -178,12 +197,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Left Content -->
-                <div class="lg:col-span-4 space-y-4">
+                <div class="lg:col-span-4 space-y-4 text-center lg:text-left">
                     <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">THE COMPLETE CAREER JOURNEY</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 leading-tight">
                         More than just opportunities.
                     </h2>
-                    <p class="text-sm text-gray-600 leading-relaxed">
+                    <p class="text-sm text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
                         Rovia connects any step of your career journey into one single powerful platform so you can move forward with clarity and confidence.
                     </p>
                     <div class="pt-2">
@@ -194,10 +213,10 @@
                 </div>
 
                 <!-- Right 10-Step Flowchart Container -->
-                <div class="lg:col-span-8 bg-gray-50/50 p-6 sm:p-10 rounded-3xl border border-gray-100">
+                <div class="lg:col-span-8 bg-gray-50/50 p-6 sm:p-10 rounded-3xl border border-gray-100 overflow-x-auto">
                     
                     <!-- Row 1 (Steps 1 to 5) -->
-                    <div class="flex flex-wrap md:flex-nowrap items-center justify-between gap-2 mb-8">
+                    <div class="flex items-center justify-between gap-4 mb-8 min-w-[550px] lg:min-w-0">
                         <div class="flex flex-col items-center text-center flex-1">
                             <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg"><i class="fa-solid fa-magnifying-glass"></i></div>
                             <span class="text-[11px] font-medium text-gray-700 mt-2">Find/ bring opportunity</span>
@@ -229,7 +248,7 @@
                     </div>
 
                     <!-- Row 2 (Steps 6 to 10) -->
-                    <div class="flex flex-wrap md:flex-nowrap items-center justify-between gap-2">
+                    <div class="flex items-center justify-between gap-4 min-w-[550px] lg:min-w-0">
                         <div class="flex flex-col items-center text-center flex-1">
                             <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-lg"><i class="fa-solid fa-chart-simple"></i></div>
                             <span class="text-[11px] font-medium text-gray-700 mt-2">Track</span>
@@ -271,12 +290,12 @@
     <section id="why-rovia" class="py-20 bg-blue-50/30 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="mb-12">
+            <div class="mb-12 text-center lg:text-left">
                 <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Why Rovia</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-1">
-                    Built for your next<br>big opportunity.
+                    Built for your next big opportunity.
                 </h2>
-                <p class="text-sm text-gray-600 mt-2 max-w-xl">
+                <p class="text-sm text-gray-600 mt-2 max-w-xl mx-auto lg:mx-0">
                     We're not just another job board. Rovia is your career companion - helping you find what fits, prepare for what's next, and grow with every step.
                 </p>
             </div>
@@ -284,7 +303,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
                 <!-- 6 Feature Cards Grid -->
-                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-3">
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     
                     <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm space-y-2">
                         <div class="w-7 h-7 rounded-md bg-blue-100 text-blue-600 flex items-center justify-center text-xs"><i class="fa-regular fa-id-card"></i></div>
@@ -327,22 +346,20 @@
                 <!-- Dashboard Container -->
                 <div id="dashboard-section" class="lg:col-span-7 bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden">
                     
-                    <div class="bg-gray-50 border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+                    <div class="bg-gray-50 border-b border-gray-200 px-4 sm:px-6 py-3 flex items-center justify-between">
                         <div class="flex items-center gap-2">
-                            <!-- Dashboard Mini Logo -->
                             <img src="Images/logo.png" alt="ROVIA Logo" class="h-5 w-auto object-contain">
                         </div>
                         <div class="flex items-center gap-3">
-                            <!-- Profile Avatar (Using Local Images/Hero_image.png) -->
                             <img src="Images/Hero_image.png" class="w-7 h-7 rounded-full object-cover object-top border border-gray-300" alt="Profile User Avatar">
                             <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 min-h-[360px]">
+                    <div class="grid grid-cols-1 md:grid-cols-12 min-h-[360px]">
                         
                         <!-- Sidebar -->
-                        <div class="col-span-4 bg-gray-50/60 border-r border-gray-100 p-4 space-y-2">
+                        <div class="hidden md:block md:col-span-4 bg-gray-50/60 border-r border-gray-100 p-4 space-y-2">
                             <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-bold text-gray-700 bg-white rounded-lg shadow-sm"><i class="fa-solid fa-house text-blue-600"></i> Home</a>
                             <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-solid fa-magnifying-glass text-gray-400"></i> Discover</a>
                             <a href="#" class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-600"><i class="fa-regular fa-clipboard text-gray-400"></i> My Application</a>
@@ -352,7 +369,7 @@
                         </div>
 
                         <!-- Main Dashboard Area -->
-                        <div class="col-span-8 p-5 space-y-4 bg-white">
+                        <div class="col-span-12 md:col-span-8 p-4 sm:p-5 space-y-4 bg-white">
                             <div>
                                 <h3 class="text-base font-bold text-gray-900">Good Morning, Favour 👋</h3>
                                 <p class="text-[11px] text-gray-500">Here's what's next for you</p>
@@ -371,16 +388,18 @@
                                     <a href="#" class="text-[11px] text-gray-400">View All</a>
                                 </div>
 
-                                <div class="grid grid-cols-2 gap-3">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <!-- Recommended Card 1 (Graduate Trainee Program) -->
                                     <div class="p-3 bg-white border border-gray-200 rounded-xl space-y-1">
-                                        <div class="w-6 h-6 rounded bg-blue-50 text-blue-600 flex items-center justify-center text-xs"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <img src="Images/Graduatetrainning.png" alt="Graduate Trainee Program Logo" class="w-6 h-6 rounded object-contain">
                                         <h5 class="text-[11px] font-bold text-gray-900">Graduate Trainee Program</h5>
                                         <p class="text-[9px] text-gray-500">Femco • Lagos, Nigeria</p>
                                         <span class="inline-block text-[8px] font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">Great Match</span>
                                     </div>
 
+                                    <!-- Recommended Card 2 (Software Engineering Intern) -->
                                     <div class="p-3 bg-white border border-gray-200 rounded-xl space-y-1">
-                                        <div class="w-6 h-6 rounded bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs"><i class="fa-solid fa-code"></i></div>
+                                        <img src="Images/Softwareengineerintern.png" alt="Software Engineering Intern Logo" class="w-6 h-6 rounded object-contain">
                                         <h5 class="text-[11px] font-bold text-gray-900">Software Engineering Intern</h5>
                                         <p class="text-[9px] text-gray-500">Minimal L. • Remote</p>
                                         <span class="inline-block text-[8px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Good Match</span>
@@ -401,8 +420,8 @@
     <!-- FOOTER DARK CTA BANNER -->
     <section class="bg-black text-white py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="space-y-2 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div class="space-y-2">
                     <span class="text-xs text-gray-400 font-medium">Your Future is a Journey</span>
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Ready to take the next steps?</h2>
                     <p class="text-xs text-gray-400 max-w-lg">
@@ -411,7 +430,7 @@
                 </div>
 
                 <div>
-                    <a href="#dashboard-section" class="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold text-gray-900 bg-white rounded-full">
+                    <a href="#dashboard-section" class="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold text-gray-900 bg-white rounded-full hover:bg-gray-100 transition-all">
                         Get Started - It's Free <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -422,28 +441,48 @@
 
     <!-- FOOTER BOTTOM -->
     <footer id="footer" class="bg-white border-t border-gray-100 py-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <!-- Footer Local Logo Link -->
-            <img src="Images/logo.png" alt="ROVIA Logo" class="h-8 w-auto object-contain">
+            <img src="Images/logo.png" alt="ROVIA Logo" class="h-8 w-auto object-contain mx-auto md:mx-0">
             
-            <div class="flex items-center gap-6 text-xs text-gray-500">
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-gray-500">
                 <a href="#">About</a>
                 <a href="#">Help</a>
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
             </div>
-            <div class="flex items-center gap-4 text-gray-400 text-xs">
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4 text-gray-400 text-xs">
                 <div class="flex items-center gap-3">
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <span>|</span>
+                <span class="hidden sm:inline">|</span>
                 <span class="text-[11px] text-gray-400">Nigeria-first. Global-by-design.</span>
             </div>
         </div>
     </footer>
 
+
+    <!-- RESPONSIVE MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle mobile drawer open/close
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu automatically when any link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
